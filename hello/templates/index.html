@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h2>Gretings Report</h2>
+
+
+<ul>
+
+<li>{{number}} greetings have been found</li>
+
+{% for greeting in greetings %}
+        <li>*** {{greeting.dateCreated}}</li>
+{% endfor %}
+
+</ul>
+
+</div>
+
+{% endblock %}
+{% endblock %}
