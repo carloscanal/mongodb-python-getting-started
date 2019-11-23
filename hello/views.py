@@ -11,7 +11,7 @@ def index(request):
 
     ### Standard URI format: mongodb://[dbuser:dbpassword@]host:port/dbname
 
-    # uri = 'mongodb://heroku_crrxdwnw:b6m00vrrmnqggnbm536s4hq44b@ds037185.mlab.com:37185/heroku_crrxdwnw?retryWrites=false' 
+    # uri = 'mongodb://heroku_7k20dqtj:ld8e257gkq8qfiounmvi2543cb@ds249267.mlab.com:49267/heroku_7k20dqtj?retryWrites=false' 
 
     # uri = 'mongodb+srv://canal:astur9@cluster0-vodgj.mongodb.net/test?retryWrites=true&w=majority'
 
