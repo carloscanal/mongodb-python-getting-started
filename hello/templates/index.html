@@ -3,20 +3,19 @@
 
 {% block content %}
 
-<h2>Gretings Report</h2>
+<h2>Greetings Report</h2>
 
 
 <ul>
 
-<li>{{number}} greetings have been found</li>
+<h3>{{number}} greetings have been found:</h3>
 
 {% for greeting in greetings %}
-        <li>*** {{greeting.dateCreated}}</li>
+        <li>{{greeting.dateCreated}}</li>
 {% endfor %}
 
 </ul>
 
 </div>
 
-{% endblock %}
 {% endblock %}

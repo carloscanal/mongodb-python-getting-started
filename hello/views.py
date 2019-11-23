@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime import datetime
 
 import sys
 import os
@@ -29,11 +30,11 @@ def index(request):
 
     # First qwe insert a new document in the collection og greetings
 
-    greetings.insert({'dateCreated' : 'hola123' })
+    greetings.insert({'dateCreated' : datetime.now().strftime("%d/%m/%Y %H:%M:%S") })
 
     # Finally we run a query
                      
-    cursor = greetings.find().sort('dateCreated', 1)
+    cursor = greetings.find().sort('dateCreated', -1)
 
     for greeting in cursor:
        print ('Greetins from %s' % (greeting['dateCreated']))
