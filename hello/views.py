@@ -13,7 +13,7 @@ def index(request):
 
     # uri = 'mongodb://heroku_7k20dqtj:ld8e257gkq8qfiounmvi2543cb@ds249267.mlab.com:49267/heroku_7k20dqtj?retryWrites=false' 
 
-    # uri = 'mongodb+srv://canal:astur9@cluster0-vodgj.mongodb.net/test?retryWrites=true&w=majority'
+    # uri = 'mongodb+srv://canal:canal@cluster0-vodgj.mongodb.net/test?retryWrites=true&w=majority'
 
     uri = os.environ['MONGODB_URI'] # + '?retryWrites=false'  # si no da error
 
