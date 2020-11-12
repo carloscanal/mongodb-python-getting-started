@@ -15,7 +15,9 @@ def index(request):
 
     # uri = 'mongodb+srv://canal:canal@cluster0-vodgj.mongodb.net/test?retryWrites=true&w=majority'
 
-    uri = os.environ['MONGODB_URI'] # + '?retryWrites=false'  # si no da error
+    # uri = os.environ['MONGODB_URI'] # + '?retryWrites=false'  # si no da error
+    
+    uri = 'mongodb+srv://canal:canal@cluster0.vodgj.mongodb.net/appsNube?retryWrites=true&w=majority'
 
     print("MONGODB_URI= %s" %(uri), flush=True)
 
